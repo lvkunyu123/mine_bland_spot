@@ -22,6 +22,9 @@ def print_separator(char: str = "=", length: int = 70):
 
 
 class MainSimulator:
+    """
+    此处str以及225行处需要修改为本人所在ip
+    """
     def __init__(self, pc_ip: str = "192.168.1.3", pc_port: int = 8080,
                  listen_port: int = 8889, vehicle_id: str = "TRUCK-001"):
         self.pc_ip = pc_ip
@@ -216,6 +219,9 @@ class MainSimulator:
 
 
 def main():
+    """
+    此处修改为本人ip
+    """
     PC_IP = "192.168.1.3"
     PC_PORT = 8080
     LISTEN_PORT = 8889
