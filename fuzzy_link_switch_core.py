@@ -345,6 +345,7 @@ class FuzzyLinkDecisionEngine:
         self._decision.blacklist_duration = blacklist_sec
         self._trend = _TrendDetector(10)
         self._sample_count = 0
+        self._last_result = None
 
     def decide(self, rsrp: float, rssi: float, loss_rate: float,
                current_link: str = "CELLULAR") -> dict:
@@ -400,3 +401,4 @@ class FuzzyLinkDecisionEngine:
         self._trend = _TrendDetector(10)
         self._decision = _LinkSwitchDecision()
         self._sample_count = 0
+        self._last_result = None
